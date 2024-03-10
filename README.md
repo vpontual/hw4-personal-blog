@@ -42,10 +42,8 @@ THEN I am presented with a link to the developer's portfolio.
 
 ## File Structure
 
-Your file structure should look like the following:
-
 ```md
-my-blog
+personal-blog
 ├── assets
 │ ├── css
 │ │ ├── blog.css
