@@ -5,7 +5,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 body.dark {
@@ -23,7 +23,7 @@ body.dark .header-bar {
   border-bottom: 5px solid white;
 }
 
-label {
+.mode-toggle {
   width: 150px;
   height: 40px;
   position: relative;
@@ -38,7 +38,7 @@ label {
   transition: 0.3s;
 }
 
-label::after {
+.mode-toggle::after {
   content: "";
   width: 31px;
   height: 31px;
@@ -67,7 +67,7 @@ input:checked + label::after {
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
 
-label:active::after {
+.mode-toggle:active::after {
   width: 50px;
 }
 
@@ -96,4 +96,29 @@ input:checked + label svg.sun {
 
 input:checked + label svg.moon {
   fill: #fff;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  top: 80px;
+}
+
+.content,
+.form {
+  flex: 1; /* Make sections share available space equally */
+  padding: 20px;
+  top: 75px; /* Remove top positioning from content */
+}
+
+.content {
+  border-top: 5px solid black; /* Remove duplicate border-top */
+  border-right: 5px solid black; /* Add right border */
+  margin-right: 2.5px;
+}
+
+.form {
+  border-top: 5px solid black; /* Keep top border */
+  border-left: 5px solid black; /* Keep left border */
+  margin-left: 2.5px;
 }
