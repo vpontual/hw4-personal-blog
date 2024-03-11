@@ -60,4 +60,6 @@ personal-blog
 
 ## Screenshot
 
+![Homescren Screenshot](./Assets/100-web-apis-challenge-demo.gif)
+
 ## Live Website
