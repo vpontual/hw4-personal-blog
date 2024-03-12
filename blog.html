@@ -12,7 +12,7 @@
   <body class="">
     <header class="header-bar">
       <h1>My Blog Posts</h1>
-      <a class="back-nav" href="./index.html">
+      <a href="./index.html" class="back-nav">
         <button
           style="
             font-size: 20px;
@@ -266,13 +266,29 @@
         </label>
       </div>
     </header>
+    <div class="content-wrapper">
+      <main>
+        <section id="blog-posts">
+          <ul id="post-list"></ul>
+        </section>
+      </main>
 
-    <main>
-      <div id="blog-posts">
-        <ul id="post-list"></ul>
-      </div>
-    </main>
+      <footer>
+        <h3>Made with by VP</h3>
+        <ul>
+          <li>
+            <strong>Portfolio: </strong
+            ><a href="www.google.com">My Portfolio</a>
+          </li>
+          <li><strong>Blog: </strong><a href="www.google.com">My Blog</a></li>
+          <li>
+            <strong>Email: </strong><a href="mailto:atrisk@me.com">Email Me!</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/blog.js"></script>
     <script src="assets/js/logic.js"></script>
   </body>
