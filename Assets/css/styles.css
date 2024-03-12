@@ -3,7 +3,7 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   /* flex-direction: column; */
 }
@@ -13,6 +13,7 @@ body.dark {
 }
 
 .header-bar {
+  display: flex;
   position: fixed;
   width: 100vw;
   height: 70px;
@@ -21,6 +22,28 @@ body.dark {
 
 body.dark .header-bar {
   border-bottom: 5px solid white;
+}
+
+.switch {
+  position: absolute;
+  top: 0;
+  right: 150px;
+}
+
+.back-nav {
+  position: absolute;
+  top: 0;
+  right: 200px;
+  padding-top: 5px;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .mode-toggle {
@@ -71,6 +94,12 @@ input:checked + label::after {
   width: 50px;
 }
 
+/* label svg {
+  position: absolute;
+  width: 24px;
+  top: 0;
+} */
+
 label svg {
   position: absolute;
   width: 24px;
@@ -100,25 +129,35 @@ input:checked + label svg.moon {
 
 .container {
   display: flex;
+  flex: 1;
   position: relative;
-  top: 80px;
+  top: 70px;
 }
 
 .content,
-.form {
+.form-section {
   flex: 1; /* Make sections share available space equally */
   padding: 20px;
-  top: 75px; /* Remove top positioning from content */
+  top: 80px; /* Remove top positioning from content */
+  margin-top: 10px;
 }
 
 .content {
   border-top: 5px solid black; /* Remove duplicate border-top */
   border-right: 5px solid black; /* Add right border */
   margin-right: 2.5px;
+  min-width: 40%;
+  max-width: 40%;
 }
 
-.form {
+.form-section {
   border-top: 5px solid black; /* Keep top border */
   border-left: 5px solid black; /* Keep left border */
   margin-left: 2.5px;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid black;
 }
