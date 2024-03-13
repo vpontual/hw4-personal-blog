@@ -35,6 +35,5 @@ function displayPosts() {
     postContainer.textContent = "No blog posts yet.";
   }
 }
-
 // Call the display function on page load and after form submission
 displayPosts();

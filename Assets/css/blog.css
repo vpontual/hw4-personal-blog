@@ -100,7 +100,7 @@ footer h3 {
 footer ul {
   list-style: none; /* Remove default bullet points */
   padding-left: 20px; /* Add left margin for list */
-  margin-bottom: 0; /* Remove extra bottom margin */
+  margin-bottom: 0;
 }
 
 footer li {

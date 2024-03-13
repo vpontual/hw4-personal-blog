@@ -60,6 +60,10 @@ personal-blog
 
 ## Screenshot
 
-![Homescren Screenshot](./Assets/100-web-apis-challenge-demo.gif)
+**Homepage**
+![Homepage Screenshot](./assets/images/ss_homepage.png)
+
+**Blog Posts**
+![Posts page Screenshot](./assets/images/ss_posts.png)
 
 ## Live Website
