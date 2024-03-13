@@ -17,13 +17,7 @@ function toggleMode() {
 //USER ACTIVITY
 
 // Add event listener to the toggle switch
-toggleSwitch.addEventListener("change", function () {
-  if (this.checked) {
-    toggleMode();
-  } else {
-    toggleMode();
-  }
-});
+toggleSwitch.addEventListener("change", toggleMode);
 
 // Check the initial state of the toggle switch and apply the corresponding styles
 if (toggleSwitch.checked) {

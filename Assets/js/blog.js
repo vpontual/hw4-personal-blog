@@ -14,19 +14,19 @@ function displayPosts() {
       postElement.classList.add("post");
 
       // Create elements for username, title, and content
-      const usernameElement = document.createElement("h3");
-      usernameElement.textContent = `Username: ${post.username}`;
-
       const titleElement = document.createElement("h2");
       titleElement.textContent = post.title;
 
       const contentElement = document.createElement("p");
       contentElement.textContent = post.content;
 
+      const usernameElement = document.createElement("h3");
+      usernameElement.textContent = `Posted by: ${post.username}`;
+
       // Append elements to the post
-      postElement.appendChild(usernameElement);
       postElement.appendChild(titleElement);
       postElement.appendChild(contentElement);
+      postElement.appendChild(usernameElement);
 
       // Append the post to the container
       postContainer.appendChild(postElement);

@@ -1,3 +1,20 @@
+:root {
+  --border-color: black;
+  --text-color: black;
+  --background-color: white;
+  --button-background: linear-gradient(to right, #ffff00, #000000);
+  --button-text-color: white;
+}
+
+/*--Dark Mode Settings--------------*/
+body.dark {
+  --border-color: white;
+  --text-color: white;
+  --background-color: black;
+  --button-background: linear-gradient(to right, #00a6ab, #c9f6fa);
+  --button-text-color: black;
+}
+
 #back-button {
   border: none;
   border-radius: 5px; /* Squared corners */
@@ -7,8 +24,8 @@
   text-align: center;
   font-size: 20px;
   padding: 15px 22px;
-  background: linear-gradient(to right, #ffff00, #000000);
-  color: white;
+  background: var(--button-background);
+  color: var(--button-text-color);
 }
 
 main {
@@ -25,8 +42,39 @@ main {
   top: 80px; /* Remove top positioning from content */
   margin-top: 10px;
   margin-bottom: 65px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 5px solid var(--border-color);
+  border-bottom: 5px solid var(--border-color);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 40px);
+  border: 2px solid black;
+  padding: 10px 0 10px 10px;
+  margin: 10px;
+}
+
+.post h2 {
+  /* Targets all h2 elements within elements with class "post" */
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+.post p {
+  /* Targets all p elements within elements with class "post" */
+  line-height: 1.5;
+  height: 100px;
+  font-style: italic;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.post h3 {
+  /* Targets all h3 elements within elements with class "post" */
+  font-size: smaller;
+  margin-bottom: 5px;
 }
 
 footer {

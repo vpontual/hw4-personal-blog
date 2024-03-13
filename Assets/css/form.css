@@ -42,8 +42,6 @@ h1 {
 .form-section form button {
   width: 100%; /* Stretch button to full width */
   padding: 10px; /* Add padding for button */
-  background-color: #4caf50; /* Adjust button color */
-  color: white; /* Adjust button text color */
   border: none; /* Remove default button border */
   cursor: pointer; /* Indicate clickable element */
 }

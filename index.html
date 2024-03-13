@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="assets/css/form.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-
+  <!-- Starting body of the webpage-->
   <body class="">
     <header class="header-bar">
+      <!--Placing heading, button, and light/dark mode switch in the header-->
       <h1>My Blog Posts</h1>
       <a ref="./index.html" class="back-nav">
         <button
@@ -24,6 +25,7 @@
           Back
         </button>
       </a>
+      <!--Creating the light/dark mode switch including linking to unique svg images for each state-->
       <div class="switch">
         <input type="checkbox" id="mode-toggle" />
         <label class="mode-toggle" for="mode-toggle">
@@ -266,7 +268,7 @@
         </label>
       </div>
     </header>
-
+    <!--Starting the main section of the webpage, under the header and separating them into two sections, one for the button to the posts page and one for the form-->
     <main class="container">
       <section class="content">
         <a href="./blog.html">
@@ -302,7 +304,7 @@
             placeholder="Write your blog post content here"
           ></textarea>
           <br />
-          <button type="submit">Submit</button>
+          <button class="submit" type="submit">Submit</button>
         </form>
       </section>
     </main>
